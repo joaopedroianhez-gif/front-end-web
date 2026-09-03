@@ -12,21 +12,30 @@
     <main>
         <section>
             <h2>Cadastre o seu curriculo</h2>
-            <form action="#" method="post">
+            <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
                 <p>Preencha o formulario abaixo para se candidatar à vaga</p>
                 <fieldset>
                     <legend>Dados Pessoais</legend>
+                    <!-- Campo novo de foto-->
+                    <div>
+                        <label for="foto_id">Foto:</label>
+                        <input id="foto_id" type="file" name="foto" accept="image/*">
+                    </div>
 
+                    <!-- adicionado placeholder -->
+
+                    <div>
                     <label for="nome_id">Nome completo:</label>
-                    <input id="nome_id" type="text" name="nome">
+                    <input id="nome_id" type="text" name="nome" placeholder="Joao pedro do rosario ianhez">
                         <div>
                             <label for="telefone_id">Telefone:</label>
-                            <input id="telefone_id" type="tel" name="telefone">
+                            <input id="telefone_id" type="tel" name="telefone" required > 
                         </div>
                     <div>
                         <label for="email_id">E-mail:</label>
                         <input id="email_id" type="email" name="email">
                     </div>
+
                     <div>
                         <label for="data_nascimento_id">Data de Nascimento:</label>
                         <input id="data_nascimento_id" type="date" name="data_nascimento">
