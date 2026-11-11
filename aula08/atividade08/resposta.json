@@ -1,0 +1,49 @@
+
+//Cadastro enviado com sucesso!
+
+//Retorno da API:
+
+"args": {},
+"data": {
+"nome": "joao pedro do rosario",
+"email": "joaopedroianhez@gmail.com",
+"cpf": "08511611975",
+"telefone": "43999203439",
+"nascimento": "2008-03-02",
+"sexo": "Masculino",
+"cep": "86604544",
+"cidade": "Rolandia",
+"estado": "PR",
+"senha": "12341234",
+"confirmarSenha": "12341234"
+},
+"files": {},
+"form": {},
+"headers": {
+"host": "postman-echo.com",
+"priority": "u=1, i",
+"accept-language": "pt-BR",
+"accept-encoding": "gzip, br",
+"sec-fetch-dest": "empty",
+"sec-fetch-mode": "cors",
+"content-length": "256",
+"sec-ch-ua-platform": "\"macOS\"",
+"user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.145.2 Chrome/150.0.7871.250 Electron/43.8.3 Safari/537.36",
+"sec-ch-ua": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\"",
+"content-type": "application/json",
+"sec-ch-ua-mobile": "?0",
+"accept": "*/*",
+"sec-fetch-site": "cross-site",
+"x-forwarded-proto": "https"
+},
+"json": {
+"nome": "joao pedro do rosario",
+"email": "joaopedroianhez@gmail.com",
+"cpf": "08511611975",
+"telefone": "43999203439",
+"nascimento": "2008-03-02",
+"sexo": "Masculino",
+"cep": "86604544",
+"cidade": "Rolandia",
+"estado": "PR",
+"senha": "12341234",}
