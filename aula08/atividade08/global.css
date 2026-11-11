@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 40px 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202536;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.container {
+  width: min(100%, 850px);
+  margin: 0 auto;
+  padding: 38px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(31, 41, 55, 0.08);
+}
+
+.cabecalho {
+  margin-bottom: 30px;
+}
+
+.etiqueta {
+  color: #2448d8;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: clamp(28px, 5vw, 38px);
+}
+
+.cabecalho p, .observacao {
+  color: #697386;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo-completo {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input, select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #d5dbea;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #202536;
+  font: inherit;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+input:focus, select:focus {
+  border-color: #3155df;
+  box-shadow: 0 0 0 3px rgba(49, 85, 223, .12);
+}
+
+input.invalido, select.invalido {
+  border-color: #dc2626;
+}
+
+.erro {
+  min-height: 14px;
+  color: #dc2626;
+  font-size: 12px;
+}
+
+.termos {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 18px 0 4px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.termos input {
+  width: 17px;
+  min-height: 17px;
+  margin-top: 1px;
+  accent-color: #2448d8;
+}
+
+button {
+  width: 100%;
+  min-height: 49px;
+  margin-top: 22px;
+  border: 0;
+  border-radius: 9px;
+  background: #2448d8;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+
+button:hover {
+  background: #1939b7;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: .65;
+  cursor: wait;
+  transform: none;
+}
+
+.observacao {
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+#status {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 620px) {
+  body { padding: 18px 10px; }
+  .container { padding: 25px 18px; }
+  .grid { grid-template-columns: 1fr; gap: 12px; }
+  .campo-completo { grid-column: auto; }
+}
